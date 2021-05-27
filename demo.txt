@@ -1,0 +1,298 @@
+built in data types
+
+
+
+Text Type:	str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+
+x = "Hello World"
+
+#display x:
+print(x)
+
+#display the data type of x as string
+print(type(x))
+
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complexd 
+
+
+casting in python
+
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
+
+Assign string to a variable
+a = "Hello"
+print(a)
+
+
+looping through string
+for x in "banana":
+  print(x)
+
+strings are arrays
+a = "Hello, World!"
+print(a[1])// e
+
+
+slicing from 2 to 5 means upto 4
+b = "Hello, World!"
+print(b[2:5])//llo
+
+
+upper
+lower
+strip
+split
+replace
+
+
+concate
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+
+
+a = 200
+b = 33
+
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+
+List
+list1 = ["abc", 34, True, 40, "male"]// different data types
+//list items are changeable 
+functions 
+//len, append ,insert(index, value),list1.extend(list2),thislist.remove("banana"),thislist.pop(1)//removes 1 index ele , if not specified index removes last item ,thislist = ["apple", "banana", "cherry"], clear() empties list
+del thislist[0]// removes 0 index element
+
+//loop list 
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+
+
+
+
+//thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+
+//tuples
+thistuple = ("apple", "banana", "cherry")
+
+
+tuple updates
+
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+
+print(x)//updates first element
+
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+  print(x)
+
+concatenate tuples with + operator
+
+
+
+set-doesnt allow duplicate values
+
+thisset = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+
+thisset.update(tropical)
+
+Dictionary
+Dictionaries are used to store data values in key:value pairs.
+
+A dictionary is a collection which is ordered*, changeable and does not allow duplicates.
+
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+
+Dictionary items are ordered, changeable, and does not allow duplicates.
+
+Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
+
+x = thisdict.get("model") //.keys() .values(),pop('key name') method
+
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.update({"year": 2020})
+
+Equals: a == b
+Not Equals: a != b
+Less than: a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+
+for x in range(2, 30, 3):
+  print(x)
+
+
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
+
+red apple
+red banana
+red cherry
+big apple
+big banana
+big cherry
+tasty apple
+tasty banana
+tasty cherry
+
+“ r “, for reading.
+“ w “, for writing.
+“ a “, for appending.
+“ r+ “, for both reading and writing
+
+# Python code to illustrate read() mode
+file = open("file.text", "r")
+print (file.read())
+
+
+# Python code to illustrate split() function
+with open("pratice.txt", "r") as file:
+	data = file.readlines()
+	for line in data:
+		word = line.split()
+		print (word)
+ 
+
+
+cars = ["Ford", "Volvo", "BMW"]
+x=cars[0]
+len(cars)
+cars.append("abc")
+cars.pop(1)
+cars.remove("ford")
+
+
+
+class and object
+class MyClass:
+        def __init__(self,nm,age):
+                self.nm=nm
+                self.age=age
+
+p1=MyClass("abc",12)
+print(p1.nm)
+print(p1.age)
+
+Inheritance
+
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+        pass// if dont want to add additional properties then use pass keyword
+
+x=Student("abc","pqr")
+x.printname()
+
+
+//super()
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+
+class Student(Person):
+  def __init__(self, fname, lname, year):
+    super().__init__(fname, lname)
+    self.graduationyear = year
+
+x = Student("djd", "njd", 2019)
+
+//iterator and methods iter and next
+mystr = "banana"
+myit = iter(mystr)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+//exception handling
+a=[1,2,3]
+try:
+        print "Second element =%d" %(a[1])
+        print "4th element =%d" %(a[3])
+
+except IndexError:
+        print "error"
+//2 error
+
+//finally block
+# Python program to demonstrate finally
+	
+# No exception Exception raised in try block
+try:
+	k = 5//0 # raises divide by zero exception.
+	print(k)
+	
+# handles zerodivision exception	
+except ZeroDivisionError:	
+	print("Can't divide by zero")
+		
+finally:
+	# this block is always executed
+	# regardless of exception generation.
+	print('This is always executed')
+
+o/p: cant divide by zero 
+this is always executed
+
+
+//raise exception
+# Program to depict Raising Exception
+
+try:
+	raise NameError("Hi there") # Raise Error
+except NameError:
+	print "An exception"
+	raise # To determine whether the exception was raised or not
+
+Traceback (most recent call last):
+  File "003dff3d748c75816b7f849be98b91b8.py", line 4, in 
+    raise NameError("Hi there") # Raise Error
+NameError: Hi there
