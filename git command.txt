@@ -1,0 +1,48 @@
+robot framework pratice urls
+http://demowebshop.tricentis.com/register
+http://www.practiceselenium.com/practice-form.html
+http://testautomationpractice.blogspot.com/
+http://thedemosite.co.uk/login.php
+
+
+
+
+
+
+
+//git commands
+git log //commit history
+git log -p -2 //shows last two entries 
+git log --stat//want to see some abbreviated stats for each commit, you can use the --stat option:
+ git log --pretty=oneline//oneline value for this option prints each commit on a single line, 
+git log --since=2.weeks
+
+//setting alias in git
+git config --global user.name  sbj
+git config --global user.email sjbdb@
+git config --global alias.st status
+ git config --global alias.ci commit
+//shows last commit in the file
+ git config alias.last 'log -p -1'
+git last
+git restore "file nm"//matches with previous commit
+git checkout -b "branch name" //to create new branch
+git checkout master// switch to master branch
+git commit -a -m //skip stage area
+git checkout master
+git checkout branch name //switch to branch specified
+git branch//check on which branch pointing
+git merge branch name //which branch you want to merge
+git branch --merged//show already merged branches
+git branch -d branch name //gives error for delete
+git branch -D branch name //branch gets deleted
+
+git branch -v //shows all branches with last commit message
+
+to delete branch from github repo
+ git push -d origin branch name
+
+git push --all  //pushes all branches to repo
+
+
+git pull url//enter url

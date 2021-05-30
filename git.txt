@@ -1,0 +1,674 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~
+$ cd Desktop/
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop
+$ cd py
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (master)
+$ rm -rf .git
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py
+$ git init
+Initialized empty Git repository in C:/Users/Amit/Desktop/py/.git/
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (master)
+$ git --a
+unknown option: --a
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (master)
+$ git add --a
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   de.py
+        new file:   demo.txt
+        new file:   e_1.py
+        new file:   pratice.txt
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (master)
+$ touch t1.txt
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   de.py
+        new file:   demo.txt
+        new file:   e_1.py
+        new file:   pratice.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        t1.txt
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (master)
+$ git add t1.txt
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   de.py
+        new file:   demo.txt
+        new file:   e_1.py
+        new file:   pratice.txt
+        new file:   t1.txt
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 24bd438] Initial commit
+ 5 files changed, 308 insertions(+)
+ create mode 100644 de.py
+ create mode 100644 demo.txt
+ create mode 100644 e_1.py
+ create mode 100644 pratice.txt
+ create mode 100644 t1.txt
+
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~
+$ cd Desktop/
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop
+$ cd py
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ static
+bash: static: command not found
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        static/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git --a
+unknown option: --a
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git add --a
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git commit -m "addded static"
+[main 3b1bbf8] addded static
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 static/dir/New Text Document.txt
+ create mode 100644 static/tex.txt
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   static/dir/New Text Document.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git add --1
+error: unknown option `1'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no
+-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of error
+s
+    --ignore-missing      check if - even missing - files are ignored in dry run
+
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separ
+ated with NUL character
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git add --a
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git commit -m "modified ignore"
+\[main 4d1908f] modified ignore
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git commit -m "modified ignore"
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   static/tex.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ gitk
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git add .
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .gitignore
+        modified:   static/tex.txt
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .gitignore
+        modified:   static/tex.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   static/tex.txt
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git diff
+diff --git a/static/tex.txt b/static/tex.txt
+index 06f03dc..efebc47 100644
+--- a/static/tex.txt
++++ b/static/tex.txt
+@@ -1 +1,2 @@
+-kjfkffig;hpopgi
+\ No newline at end of file
++kjfkffig;hpopgi
++dbjsdbbsbd
+\ No newline at end of file
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git add .
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git diff
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .gitignore
+        modified:   static/tex.txt
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git diff --staged
+diff --git a/.gitignore b/.gitignore
+index a135832..bf00e86 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,2 +1,3 @@
+ *.log
+-dir/
+\ No newline at end of file
++/dir/
++static/dir
+\ No newline at end of file
+diff --git a/static/tex.txt b/static/tex.txt
+index e69de29..efebc47 100644
+--- a/static/tex.txt
++++ b/static/tex.txt
+@@ -0,0 +1,2 @@
++kjfkffig;hpopgi
++dbjsdbbsbd
+\ No newline at end of file
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .gitignore
+        modified:   static/tex.txt
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git log
+commit 4d1908f8167d08f7f4ec043942966e8307d37101 (HEAD -> main)
+Author: Amitgaikwad45 <ag33826@gmail.com>
+Date:   Wed May 26 09:16:42 2021 +0530
+
+    modified ignore
+
+commit 3b1bbf8a88037dbcd7cf306949455f0a699761a9
+Author: Amitgaikwad45 <ag33826@gmail.com>
+Date:   Wed May 26 09:14:14 2021 +0530
+
+    addded static
+
+commit a1a798ad27ea0991219446efd03ae87ed188f321 (origin/main)
+Author: Amitgaikwad45 <ag33826@gmail.com>
+Date:   Tue May 25 19:03:56 2021 +0530
+
+    modified fike
+
+commit 044fcb0a618bcad1874a73a5c7e29d1e9147abc1
+Author: Amitgaikwad45 <ag33826@gmail.com>
+Date:   Tue May 25 18:51:43 2021 +0530
+
+    added gitignore
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ q
+bash: q: command not found
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git commit -m "This is a good commit"
+[main 459d2ef] This is a good commit
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ ^C
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        first.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git add .
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   first.txt
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   first.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first.txt
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git add .
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   first.txt
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git commit -m "added first"
+[main 16f2a7b] added first
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first.txt
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    first.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        second.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git add .
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git commit -m "renamed first to second"
+[main 79939dd] renamed first to second
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename first.txt => second.txt (100%)
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$  git rm pratice.txt
+rm 'pratice.txt'
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    pratice.txt
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$  git commit -m "removed pratice.txt"
+[main bbb05d3] removed pratice.txt
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 pratice.txt
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git mv second.txt second_rename.txt
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    second.txt -> second_rename.txt
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git commit -m "renamed"
+[main 8ff6677] renamed
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename second.txt => second_rename.txt (100%)
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git add .
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git commit -m "changed gitignore"
+[main 7347868] changed gitignore
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 8 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   de.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git rm --cached
+fatal: No pathspec was given. Which files should I remove?
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git rm --cached de.py
+rm 'de.py'
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    de.py
+
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git commit -m "removed de.py"
+[main fa9e7b9] removed de.py
+ 1 file changed, 6 deletions(-)
+ delete mode 100644 de.py
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 9 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 9 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py (main)
+$ rm -rf .git
+
+Amit@DESKTOP-JHGBG3B MINGW64 ~/Desktop/py
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+
+
